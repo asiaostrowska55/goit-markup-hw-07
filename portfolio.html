@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,32 +23,37 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="container header-items">
-        <a href="./index.html" class="webstudio transition"
+    <header class="header container">
+      <div class="header__items">
+        <a href="./index.html" class="header__logo transition"
           ><span class="blue">Web</span>Studio</a
         >
         <nav>
-          <ul class="header-links">
-            <li>
-              <a href="./index.html" class="link transition">Agencja</a>
+          <ul class="header__nav">
+            <li class="position">
+              <a href="./index.html" class="header__link transition">Agencja</a>
             </li>
             <li class="position">
-              <a href="./portfolio.html" class="link active transition"
+              <a
+                href="./portfolio.html"
+                class="header__link header__active transition"
                 >Portfolio</a
               >
             </li>
             <li>
-              <a href="#" rel="noopener noreferrer" class="link transition"
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                class="header__link transition"
                 >Kontakt</a
               >
             </li>
           </ul>
         </nav>
-        <ul class="header-contact">
+        <ul class="header__contact">
           <li>
             <a class="contact transition" href="mailto:info@devstudio.com">
-              <svg class="email" width="16px" height="12px">
+              <svg class="contact__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -56,7 +61,7 @@
           </li>
           <li>
             <a class="contact transition" href="tel:+48111111111">
-              <svg class="phone" width="10px" height="16px">
+              <svg class="contact__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -66,27 +71,41 @@
       </div>
     </header>
 
-    <main>
-      <section class="container section">
-        <ul class="button-style">
+    <main class="container">
+      <section class="section">
+        <ul class="button">
           <li>
-            <button type="button" class="btn transition">Wszystkie</button>
+            <button type="button" class="button__label transition">
+              Wszystkie
+            </button>
           </li>
-          <li><button type="button" class="btn transition">Strony</button></li>
           <li>
-            <button type="button" class="btn transition">Aplikacje</button>
+            <button type="button" class="button__label transition">
+              Strony
+            </button>
           </li>
-          <li><button type="button" class="btn transition">Dizajn</button></li>
           <li>
-            <button type="button" class="btn transition">Marketing</button>
+            <button type="button" class="button__label transition">
+              Aplikacje
+            </button>
+          </li>
+          <li>
+            <button type="button" class="button__label transition">
+              Dizajn
+            </button>
+          </li>
+          <li>
+            <button type="button" class="button__label transition">
+              Marketing
+            </button>
           </li>
         </ul>
 
-        <ul class="project-set">
-          <li class="project-item">
-            <figure class="figure">
+        <ul class="project">
+          <li class="project__item">
+            <figure class="project__figure">
               <div class="overlay">
-                <div class="overlay-text">
+                <div class="overlay__text">
                   <p class="text">
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -101,17 +120,17 @@
                 width="370"
                 alt="laptop screen showing a website with team members"
               />
-              <figcaption class="figcaption">
-                <h4 class="portfolio-titles">Technocrack</h4>
-                <p class="portfolio-descr">Strona internetowa</p>
+              <figcaption class="project__figcaption">
+                <h4 class="project__titles">Technocrack</h4>
+                <p class="project__descr">Strona internetowa</p>
               </figcaption>
             </figure>
           </li>
 
-          <li class="project-item transition">
-            <figure class="figure">
+          <li class="project__item">
+            <figure class="project__figure">
               <div class="overlay">
-                <div class="overlay-text">
+                <div class="overlay__text">
                   <p class="text">
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -126,8 +145,8 @@
                 width="370"
                 alt="two basketball players playing basketball"
               />
-              <figcaption class="figcaption">
-                <h4 class="portfolio-titles">
+              <figcaption class="project__figcaption">
+                <h4 class="portfolio-title">
                   Grafika New Orlean vs Golden Star
                 </h4>
                 <p class="portfolio-descr">Dizajn</p>
@@ -135,10 +154,10 @@
             </figure>
           </li>
 
-          <li class="project-item transition">
-            <figure class="figure">
+          <li class="project__item">
+            <figure class="project__figure">
               <div class="overlay">
-                <div class="overlay-text">
+                <div class="overlay__text">
                   <p class="text">
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -153,17 +172,17 @@
                 width="370"
                 alt="seafood restaurant logo with fish graphic in the background"
               />
-              <figcaption class="figcaption">
-                <h4 class="portfolio-titles">Restauracja Seafood</h4>
-                <p class="portfolio-descr">Aplikacja</p>
+              <figcaption class="project__figcaption">
+                <h4 class="project__title">Restauracja Seafood</h4>
+                <p class="project__descr">Aplikacja</p>
               </figcaption>
             </figure>
           </li>
 
-          <li class="project-item transition">
-            <figure class="figure">
+          <li class="project__item">
+            <figure class="project__figure">
               <div class="overlay">
-                <div class="overlay-text">
+                <div class="overlay__text">
                   <p class="text">
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -178,17 +197,17 @@
                 width="370"
                 alt="black headphones"
               />
-              <figcaption class="figcaption">
-                <h4 class="portfolio-titles">Projekt Prime</h4>
-                <p class="portfolio-descr">Marketing</p>
+              <figcaption class="project__figcaption">
+                <h4 class="project__title">Projekt Prime</h4>
+                <p class="project__descr">Marketing</p>
               </figcaption>
             </figure>
           </li>
 
-          <li class="project-item transition">
-            <figure class="figure">
+          <li class="project__item">
+            <figure class="project__figure">
               <div class="overlay">
-                <div class="overlay-text">
+                <div class="overlay__text">
                   <p class="text">
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -203,17 +222,17 @@
                 width="370"
                 alt="white and light orange boxes with captions"
               />
-              <figcaption class="figcaption">
-                <h4 class="portfolio-titles">Projekt Boxes</h4>
-                <p class="portfolio-descr">Aplikacja</p>
+              <figcaption class="project__figcaption">
+                <h4 class="project__title">Projekt Boxes</h4>
+                <p class="project__descr">Aplikacja</p>
               </figcaption>
             </figure>
           </li>
 
-          <li class="project-item transition">
-            <figure class="figure">
+          <li class="project__item">
+            <figure class="project__figure">
               <div class="overlay">
-                <div class="overlay-text">
+                <div class="overlay__text">
                   <p class="text">
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -228,17 +247,17 @@
                 width="370"
                 alt="work screen with data on it"
               />
-              <figcaption class="figcaption">
-                <h4 class="portfolio-titles">Inspiration has no Borders</h4>
-                <p class="portfolio-descr">Strona internetowa</p>
+              <figcaption class="project__figcaption">
+                <h4 class="project__title">Inspiration has no Borders</h4>
+                <p class="project__descr">Strona internetowa</p>
               </figcaption>
             </figure>
           </li>
 
-          <li class="project-item transition">
-            <figure class="figure">
+          <li class="project__item">
+            <figure class="project__figure">
               <div class="overlay">
-                <div class="overlay-text">
+                <div class="overlay__text">
                   <p class="text">
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -253,17 +272,17 @@
                 width="370"
                 alt="open womens magazine"
               />
-              <figcaption class="figcaption">
-                <h4 class="portfolio-titles">Magazyn Limited Edition</h4>
-                <p class="portfolio-descr">Dizajn</p>
+              <figcaption class="project__figcaption">
+                <h4 class="project__title">Magazyn Limited Edition</h4>
+                <p class="project__descr">Dizajn</p>
               </figcaption>
             </figure>
           </li>
 
-          <li class="project-item transition">
-            <figure class="figure">
+          <li class="project__item">
+            <figure class="project__figure">
               <div class="overlay">
-                <div class="overlay-text">
+                <div class="overlay__text">
                   <p class="text">
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -278,17 +297,17 @@
                 width="370"
                 alt="white label with label tag caption"
               />
-              <figcaption class="figcaption">
-                <h4 class="portfolio-titles">Projekt LAB</h4>
-                <p class="portfolio-descr">Marketing</p>
+              <figcaption class="project__figcaption">
+                <h4 class="project__title">Projekt LAB</h4>
+                <p class="project__descr">Marketing</p>
               </figcaption>
             </figure>
           </li>
 
-          <li class="project-item transition">
-            <figure class="figure">
+          <li class="project__item">
+            <figure class="project__figure">
               <div class="overlay">
-                <div class="overlay-text">
+                <div class="overlay__text">
                   <p class="text">
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -303,9 +322,9 @@
                 width="370"
                 alt="person typing on laptops keyboard"
               />
-              <figcaption class="figcaption">
-                <h4 class="portfolio-titles">Growing Business</h4>
-                <p class="portfolio-descr">Aplikacja</p>
+              <figcaption class="project__figcaption">
+                <h4 class="project__title">Growing Business</h4>
+                <p class="project__descr">Aplikacja</p>
               </figcaption>
             </figure>
           </li>
@@ -316,10 +335,10 @@
     <footer class="footer">
       <div class="container">
         <div>
-          <a href="./index.html" class="webstudio2 transition"
+          <a href="./index.html" class="footer__logo transition"
             ><span class="blue">Web</span>Studio</a
           >
-          <address class="address footer-items">
+          <address class="address">
             m. Warszawa, Aleje Jerozolimskie 21
             <a href="mailto:info@devstudio.com" class="contact transition"
               >info@devstudio.com</a
@@ -331,11 +350,11 @@
         </div>
 
         <div>
-          <h5 class="join-us">dołącz do nas</h5>
-          <ul class="icon-footer">
+          <h5 class="media-title">dołącz do nas</h5>
+          <ul class="media">
             <li>
-              <a class="link-media">
-                <svg class="link-media-box transition">
+              <a class="media__link">
+                <svg class="media__link-icon transition">
                   <use
                     href="./images/icons.svg#icon-instagram"
                     width="20"
@@ -347,8 +366,8 @@
               </a>
             </li>
             <li>
-              <a class="link-media">
-                <svg class="link-media-box transition">
+              <a class="media__link">
+                <svg class="media__link-icon transition">
                   <use
                     href="./images/icons.svg#icon-twitter"
                     width="20"
@@ -360,8 +379,8 @@
               </a>
             </li>
             <li>
-              <a class="link-media">
-                <svg class="link-media-box transition">
+              <a class="media__link">
+                <svg class="media__link-icon transition">
                   <use
                     href="./images/icons.svg#icon-facebook"
                     width="20"
@@ -373,8 +392,8 @@
               </a>
             </li>
             <li>
-              <a class="link-media">
-                <svg class="link-media-box transition">
+              <a class="media__link">
+                <svg class="media__link-icon transition">
                   <use
                     href="./images/icons.svg#icon-linkedin"
                     width="20"
@@ -387,22 +406,23 @@
             </li>
           </ul>
         </div>
+
         <div>
-          <form name="signup-form" class="footer-form">
-            <label class="footer-label" for="user_email">
+          <form class="footer__form" name="signup-form">
+            <label class="footer__form-label" for="user_email">
               zapisz się do newslettera</label
             >
-            <div class="footer-newsletter">
+            <div class="newsletter">
               <input
-                class="footer-input"
+                class="newsletter__input"
                 type="email"
                 name="email"
                 id="user_email"
                 placeholder="E-mail"
               />
-              <button type="submit" class="footer-btn transition">
+              <button type="submit" class="newsletter__button transition">
                 Zapisz się
-                <svg class="footer-check-icon">
+                <svg class="send-icon">
                   <use
                     href="./images/icons.svg#icon-send"
                     width="24"
