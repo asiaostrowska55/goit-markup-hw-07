@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,14 +23,14 @@
   </head>
 
   <body>
-    <header class="header container">
-      <div class="header__items">
-        <a href="./index.html" class="header__logo transition"
-          ><span class="blue">Web</span>Studio</a
+    <header class="header">
+      <div class="header__items container">
+        <a href="./index.html" class="logo transition"
+          ><span class="logo logo--blue">Web</span>Studio</a
         >
         <nav>
-          <ul class="header__nav">
-            <li class="position">
+          <ul class="header__list">
+            <li class="header__position">
               <a
                 href="./index.html"
                 class="header__link header__active transition"
@@ -79,10 +79,10 @@
           EFEKTYWNE ROZWIĄZANIA <br />
           DLA WASZEGO BIZNESU
         </h1>
-        <p class="title__button">
+        <p class="title__btn">
           <button
             type="button"
-            class="title__button-label transition"
+            class="btn transition"
             data-modal-open
           >
             Zamów usługe
@@ -91,7 +91,6 @@
       </div>
 
       <section class="container section">
-        <div class="section">
           <ul class="list">
             <li>
               <div class="list__item">
@@ -146,46 +145,42 @@
               </p>
             </li>
           </ul>
-        </div>
       </section>
 
-      <section class="container">
-        <div class="section">
+      <section class="section container">
           <h2 class="heading">Czym się zajmujemy</h2>
           <ul class="section__list">
-            <li class="section__label">
+            <li class="section__image">
               <img
                 src="images/image(1).jpg"
                 width="370"
                 height="294"
                 alt="close up image programer working his desk office"
               />
-              <p class="label">aplikacje komputerowe</p>
+              <p class="section__label">aplikacje komputerowe</p>
             </li>
-            <li class="section__label">
+            <li class="section__image">
               <img
                 src="images/image(2).jpg"
                 width="370"
                 height="294"
                 alt="web ui designers are developing application smartphones team creators is working interface mobile phones"
               />
-              <p class="label">aplikacje mobilne</p>
+              <p class="section__label">aplikacje mobilne</p>
             </li>
-            <li class="section__label">
+            <li class="section__image">
               <img
                 src="images/image(3).jpg"
                 width="370"
                 height="294"
                 alt="creative artist web design with working colour selection graphic tablet"
               />
-              <p class="label">rozwiązania graficzne</p>
+              <p class="section__label">rozwiązania graficzne</p>
             </li>
           </ul>
-        </div>
       </section>
 
-      <section class="section background">
-        <div class="container">
+      <section class="section background container">
           <h2 class="heading">Nasz zespół</h2>
           <ul class="team">
             <li>
@@ -397,11 +392,9 @@
               </figure>
             </li>
           </ul>
-        </div>
       </section>
 
-      <section class="container">
-        <div class="section">
+      <section class="section container">
           <h2 class="heading">Nasi klienci</h2>
           <ul class="client">
             <li>
@@ -484,7 +477,6 @@
             </li>
           </ul>
         </div>
-      </section>
     </main>
 
     <footer class="footer">
