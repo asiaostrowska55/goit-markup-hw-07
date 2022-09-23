@@ -1,16 +1,22 @@
 $font: "Roboto", "Raleway", sans-serif;
 //font size
-$regular-font-size: 14px;
-$titles-font-size: 36px;
-$label-font-size: 44px;
-$btn-font-size: 16px;
-$team-font-size: 16px;
-$project-title-font-size: 18px;
-$project-descr-font-size: 16px;
-$text-font-size: 18px;
-$footer-logo-font-size: 26px;
-$form-title-font-size: 20px;
-$form-label-font-size: 12px;
+$font-size: (
+  "regular": 14px,
+  "titles": 36px,
+  "label": 44px,
+  "btn": 16px,
+  "team": 16px,
+  "project-title": 18px,
+  "project-descr": 16px,
+  "text": 18px,
+  "footer-logo": 26px,
+  "form-title": 20px,
+  "form-label": 12px,
+);
+
+@function get-font($key) {
+  @return map-get($font-size, $key);
+}
 
 //font weight
 $font-normal: 400;

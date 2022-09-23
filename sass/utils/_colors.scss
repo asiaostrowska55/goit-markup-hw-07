@@ -1,42 +1,46 @@
-//text-general
-$primary-text-color: #212121;
-$secondary-text-color: #757575;
-$light-text-color: #ffffff;
-$text-transition: #2196f3;
-//background
-$primary-background: #ffffff;
-$title-background: #2f303a;
-$section-text-backround: rgba(47, 48, 58, 0.8);
-$team-background-color: #f5f4fa;
-$overlay-background: rgba(33, 150, 243, 0.9);
-$backdrop-background: rgba(0, 0, 0, 0.2);
-//icons
-$icon-color: #afb1b8;
-$icon-background-transition: #2196f3;
-$header-icon-color: #757575;
-$list-icon-background: #f5f4fa;
-$client-icon-color: #afb1b8;
-$client-icon-transition: #2196f3;
-$footer-icon-color: #ffffff;
-$footer-icon-background: rgba(255, 255, 255, 0.1);
-$modal-icon-color: #0e0a0a;
+$color: (
+  //text-general
+  "primary": #212121,
+  "secondary": #757575,
+  "light": #ffffff,
+  "transition": #2196f3,
+  //background
+  "primary-background": #ffffff,
+  "title-background": #2f303a,
+  "section-backround": rgba(47, 48, 58, 0.8),
+  "team-background": #f5f4fa,
+  "overlay-background": rgba(33, 150, 243, 0.9),
+  "backdrop-background": rgba(0, 0, 0, 0.2),
+  //icons
+  "icon": #afb1b8,
+  "icon-background-transition": #2196f3,
+  "header-icon": #757575,
+  "list-icon-background": #f5f4fa,
+  "client-icon": #afb1b8,
+  "client-icon-transition": #2196f3,
+  "footer-icon": #ffffff,
+  "footer-icon-background": rgba(255, 255, 255, 0.1),
+  "modal-icon": #0e0a0a,
+  //buttons
+  "btn-background": #2196f3,
+  "btn-transition": #0383ed,
+  "btn-border": #9c9c9c,
+  "btn-text": #ffffff,
+  "potfolio-btn-background": #f5f4fa,
+  "portfolio-btn-transition": #2196f3,
+  "modal-btn-border": #000000,
+  "modal-btn": #0e0a0a,
+  "modal-btn-background": rgba(255, 255, 255, 0.1),
+  "modal-btn-transition": #2196f3,
+  //rest
+  "border": #ececec,
+  "logo": #000000,
+  "web": #2196f3,
+  "form-border": rgba(33, 33, 33, 0.2),
+  "form-comment": rgba(117, 117, 117, 0.5),
+  "checkbox-border": #212121
+);
 
-//buttons
-$btn-background: #2196f3;
-$btn-transition: #0383ed;
-$btn-border-color: #9c9c9c;
-$btn-text-color: #ffffff;
-$potfolio-btn-background: #f5f4fa;
-$portfolio-btn-transition: #2196f3;
-$modal-btn-border-color: #000000;
-$modal-btn-color: #0e0a0a;
-$modal-btn-background: rgba(255, 255, 255, 0.1);
-$modal-btn-transition: #2196f3;
-//rest
-$header-border-color: #ececec;
-$logo-color: #000000;
-$logo-second-color: #2196f3;
-$project-border-color: #eeeeee;
-$form-border-color: rgba(33, 33, 33, 0.2);
-$form-comment-color: rgba(117, 117, 117, 0.5);
-$checkbox-border-color: #212121;
+@function get-color($key) {
+  @return map-get($color, $key);
+}
