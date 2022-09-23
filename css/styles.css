@@ -6,9 +6,6 @@ body {
   margin: 0;
 }
 
-.background {
-  background: #f5f4fa;
-}
 .transition {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -76,6 +73,7 @@ img {
 .logo--blue {
   color: #2196f3;
 }
+
 .header__list {
   display: flex;
   list-style: none;
@@ -186,7 +184,7 @@ img {
   margin: 0 auto;
   text-align: center;
 }
-.title__button-label:hover {
+.btn:hover {
   box-shadow: 1px 0px 10px 3px rgba(73, 76, 105, 0.693);
   transform: scale(1.05);
   background-color: #0383ed;
@@ -259,6 +257,9 @@ img {
 
 /* -----------// team section //----------- */
 
+.background {
+  background: #f5f4fa;
+}
 .team {
   font-weight: 700;
   font-size: 36px;
@@ -460,7 +461,7 @@ img {
   height: 252px;
   justify-content: center;
 }
-.footer__logo {
+.footer-contact__logo {
   font-family: "Raleway";
   font-weight: 700;
   color: #ffffff;
@@ -468,13 +469,21 @@ img {
   text-decoration: none;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  display: block;
-  padding-top: 60px;
-  padding-left: 15px;
+  /* display: block; */
+  /* padding-top: 60px;
+  padding-left: 15px; */
   margin: 0;
 }
-.footer__logo:hover,
-.footer__logo:focus {
+.footer-contact {
+  padding-top: 60px;
+  padding-left: 15px;
+}
+.footer-contact__logo--blue {
+  color: #2196f3;
+}
+
+.footer-contact__logo:hover,
+.footer-contact__logo:focus {
   color: #2196f3;
 }
 
@@ -489,7 +498,7 @@ img {
   letter-spacing: 0.03em;
   display: flex;
   flex-direction: column;
-  padding: 20px 0 60px 15px;
+  padding: 20px 0 60px 0;
   margin: 0;
   list-style: none;
   gap: 9px;
@@ -569,7 +578,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: #2094f3;
+  background-color: #2196f3;
   display: flex;
   align-items: center;
   text-align: center;
@@ -625,7 +634,7 @@ img {
   width: 30px;
   height: 30px;
   border-radius: 50px;
-  border: 1px solid #0000001a;
+  border: 1px solid #000000;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
@@ -746,7 +755,9 @@ img {
   border: 1px solid #2196f3;
   border-radius: 2px;
 }
-
+.checkbox__link {
+  color: #2196f3;
+}
 .form__button {
   width: 200px;
   height: 50px;
