@@ -377,6 +377,36 @@ img {
   border-color: #2196f3;
 }
 
+.text {
+  line-height: 1.56;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: start;
+  padding: 49px 45px 49px 24px;
+  margin: 0;
+}
+
+.overlay {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+.overlay__text {
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+}
+
+.project__figure:hover .overlay__text {
+  transform: translateY(0);
+}
+
+/* --------------- || footer || --------------- */
 .footer {
   display: flex;
   background-color: #2f303a;

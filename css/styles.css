@@ -427,6 +427,9 @@ img {
   letter-spacing: 0.06em;
   margin: 0;
 }
+.project__figure:hover .overlay__text {
+  transform: translateY(0);
+}
 
 /* -- overlay animation -- */
 .text {
@@ -449,9 +452,6 @@ img {
   width: 370px;
   height: 294px;
   overflow: hidden;
-}
-.project__figure:hover .overlay__text {
-  transform: translateY(0);
 }
 
 /* --------------- || footer || --------------- */
