@@ -18,7 +18,7 @@
 //   border-style: solid;
 //   border-color: $color;
 // }
-@mixin font-style($height: 1.16, $weight, $spacing: 0.3em) {
+@mixin font-style($height: 1.16, $weight, $spacing: 0.03em) {
   line-height: $height;
   font-weight: $weight;
   letter-spacing: $spacing;

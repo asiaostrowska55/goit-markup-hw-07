@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,7 +34,9 @@
               <a href="./index.html" class="header__link">Agencja</a>
             </li>
             <li class="header__position">
-              <a href="./portfolio.html" class="header__link header__active"
+              <a
+                href="./portfolio.html"
+                class="header__link header__link--active"
                 >Portfolio</a
               >
             </li>
@@ -48,7 +50,7 @@
         <ul class="header__contact">
           <li>
             <a class="contact" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16px" height="12px">
+              <svg class="icon icon--color" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -56,7 +58,7 @@
           </li>
           <li>
             <a class="contact" href="tel:+48111111111">
-              <svg class="contact__icon" width="10px" height="16px">
+              <svg class="icon icon--color" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -70,29 +72,19 @@
       <section class="section">
         <ul class="button">
           <li>
-            <button type="button" class="button__label transition">
-              Wszystkie
-            </button>
+            <button type="button" class="button__label">Wszystkie</button>
           </li>
           <li>
-            <button type="button" class="button__label transition">
-              Strony
-            </button>
+            <button type="button" class="button__label">Strony</button>
           </li>
           <li>
-            <button type="button" class="button__label transition">
-              Aplikacje
-            </button>
+            <button type="button" class="button__label">Aplikacje</button>
           </li>
           <li>
-            <button type="button" class="button__label transition">
-              Dizajn
-            </button>
+            <button type="button" class="button__label">Dizajn</button>
           </li>
           <li>
-            <button type="button" class="button__label transition">
-              Marketing
-            </button>
+            <button type="button" class="button__label">Marketing</button>
           </li>
         </ul>
 
@@ -141,10 +133,10 @@
                 alt="two basketball players playing basketball"
               />
               <figcaption class="project__figcaption">
-                <h4 class="portfolio-title">
+                <h4 class="project__titles">
                   Grafika New Orlean vs Golden Star
                 </h4>
-                <p class="portfolio-descr">Dizajn</p>
+                <p class="project__descr">Dizajn</p>
               </figcaption>
             </figure>
           </li>
@@ -330,19 +322,17 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-contact">
-          <a href="./index.html" class="footer-contact__logo transition"
+          <a href="./index.html" class="footer-contact__logo"
             ><span class="footer-contact__logo footer-contact__logo--blue"
               >Web</span
             >Studio</a
           >
           <address class="address">
             m. Warszawa, Aleje Jerozolimskie 21
-            <a href="mailto:info@devstudio.com" class="contact transition"
+            <a href="mailto:info@devstudio.com" class="contact"
               >info@devstudio.com</a
             >
-            <a href="tel:+48111111111" class="contact transition"
-              >+48 111 111 111</a
-            >
+            <a href="tel:+48111111111" class="contact">+48 111 111 111</a>
           </address>
         </div>
 
@@ -351,7 +341,7 @@
           <ul class="media">
             <li>
               <a class="media__link">
-                <svg class="media__link-icon transition">
+                <svg class="media__link-icon">
                   <use
                     href="./images/icons.svg#icon-instagram"
                     width="20"
@@ -364,7 +354,7 @@
             </li>
             <li>
               <a class="media__link">
-                <svg class="media__link-icon transition">
+                <svg class="media__link-icon">
                   <use
                     href="./images/icons.svg#icon-twitter"
                     width="20"
@@ -377,7 +367,7 @@
             </li>
             <li>
               <a class="media__link">
-                <svg class="media__link-icon transition">
+                <svg class="media__link-icon">
                   <use
                     href="./images/icons.svg#icon-facebook"
                     width="20"
@@ -390,7 +380,7 @@
             </li>
             <li>
               <a class="media__link">
-                <svg class="media__link-icon transition">
+                <svg class="media__link-icon">
                   <use
                     href="./images/icons.svg#icon-linkedin"
                     width="20"
@@ -406,7 +396,7 @@
 
         <div>
           <form class="footer__form" name="signup-form">
-            <label class="footer__form-label" for="user_email">
+            <label class="footer__form-label" for="newsletter_email">
               zapisz się do newslettera</label
             >
             <div class="newsletter">
@@ -414,10 +404,10 @@
                 class="newsletter__input"
                 type="email"
                 name="email"
-                id="user_email"
+                id="newsletter_email"
                 placeholder="E-mail"
               />
-              <button type="submit" class="newsletter__button transition">
+              <button type="submit" class="newsletter__button">
                 Zapisz się
                 <svg class="send-icon">
                   <use

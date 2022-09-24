@@ -1,5 +1,6 @@
 .button {
   @include flex;
+  @include transition;
   list-style: none;
   margin: 0;
   gap: 8px;

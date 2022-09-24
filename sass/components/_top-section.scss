@@ -8,7 +8,7 @@
   margin: 0 auto;
   &__label {
     @include flex;
-    @include font-style($weight: $font-black, $spacing: 0.6em);
+    @include font-style($weight: $font-black, $spacing: 0.06em);
     font-size: getFont("label");
     color: getColor("light");
     margin: 0;
@@ -45,7 +45,7 @@
     @include flex;
     width: 270px;
     height: 120px;
-    background-color: #f5f4fa;
+    background-color: getColor("light-bg");
     margin-bottom: 30px;
   }
   &__label {

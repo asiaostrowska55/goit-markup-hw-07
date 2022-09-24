@@ -15,8 +15,8 @@
     position: relative;
   }
   &__link {
+    @include font-style($weight: $font-medium, $spacing: 0.02em);
     @include transition;
-    @include font-style($weight: $font-medium, $spacing: 0.2em);
     font-size: getFont("regular");
     color: getColor("primary");
     text-decoration: none;
@@ -31,6 +31,7 @@
     color: getColor("brand");
   }
   &__contact {
+    @include transition;
     @include flex;
     list-style: none;
     margin-left: auto;

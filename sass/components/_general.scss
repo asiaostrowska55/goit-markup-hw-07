@@ -9,7 +9,7 @@ body {
 }
 .contact {
   @include transition;
-  @include font-style($weight: $font-medium, $spacing: 0.2em);
+  @include font-style($weight: $font-medium, $spacing: 0.02em);
   color: getColor("secondary");
   font-size: getFont("regular");
   text-decoration: none;
