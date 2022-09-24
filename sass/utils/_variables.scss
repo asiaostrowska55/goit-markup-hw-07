@@ -20,6 +20,7 @@ $shadow: (
 
 $radius: 4px;
 $border: 2px solid getColor("primary");
+$btn-border: 1px solid getColor("btn-border");
 //transform
 $move-all: translateY(100%);
 $move-none: translateY(0);
