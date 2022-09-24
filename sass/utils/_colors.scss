@@ -5,32 +5,32 @@ $color: (
   "light": #ffffff,
   "transition": #2196f3,
   //background
-  "primary-background": #ffffff,
-  "title-background": #2f303a,
-  "section-backround": rgba(47, 48, 58, 0.8),
-  "team-background": #f5f4fa,
-  "overlay-background": rgba(33, 150, 243, 0.9),
-  "backdrop-background": rgba(0, 0, 0, 0.2),
+  "primary-bg": #ffffff,
+  "title-bg": #2f303a,
+  "section-bg": rgba(47, 48, 58, 0.8),
+  "team-bg": #f5f4fa,
+  "overlay-bg": rgba(33, 150, 243, 0.9),
+  "backdrop-bg": rgba(0, 0, 0, 0.2),
   //icons
   "icon": #afb1b8,
-  "icon-background-transition": #2196f3,
+  "icon-bg-transition": #2196f3,
   "header-icon": #757575,
-  "list-icon-background": #f5f4fa,
+  "list-icon-bg": #f5f4fa,
   "client-icon": #afb1b8,
   "client-icon-transition": #2196f3,
   "footer-icon": #ffffff,
-  "footer-icon-background": rgba(255, 255, 255, 0.1),
+  "footer-icon-bg": rgba(255, 255, 255, 0.1),
   "modal-icon": #0e0a0a,
   //buttons
-  "btn-background": #2196f3,
+  "btn-bg": #2196f3,
   "btn-transition": #0383ed,
   "btn-border": #9c9c9c,
   "btn-text": #ffffff,
-  "potfolio-btn-background": #f5f4fa,
+  "potfolio-btn-bg": #f5f4fa,
   "portfolio-btn-transition": #2196f3,
   "modal-btn-border": #000000,
   "modal-btn": #0e0a0a,
-  "modal-btn-background": rgba(255, 255, 255, 0.1),
+  "modal-btn-bg": rgba(255, 255, 255, 0.1),
   "modal-btn-transition": #2196f3,
   //rest
   "border": #ececec,
@@ -41,6 +41,6 @@ $color: (
   "checkbox-border": #212121
 );
 
-@function get-color($key) {
+@function getColor($key) {
   @return map-get($color, $key);
 }

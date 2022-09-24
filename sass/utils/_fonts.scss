@@ -14,7 +14,7 @@ $font-size: (
   "form-label": 12px,
 );
 
-@function get-font($key) {
+@function getFont($key) {
   @return map-get($font-size, $key);
 }
 
