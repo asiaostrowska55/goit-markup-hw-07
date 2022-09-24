@@ -14,6 +14,14 @@ body {
   font-size: getFont("regular");
   text-decoration: none;
 }
+.contact {
+  &:focus .icon--color {
+    fill: getColor("brand");
+  }
+  &:hover .icon--color {
+    fill: getColor("brand");
+  }
+}
 *,
 *::before,
 *::after {

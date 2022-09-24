@@ -71,11 +71,3 @@
     color: getColor("brand");
   }
 }
-.contact {
-  &:focus .icon--color {
-    fill: #2196f3;
-  }
-  &:hover .icon--color {
-    fill: #2196f3;
-  }
-}

@@ -19,11 +19,9 @@ $shadow: (
 }
 
 $radius: 4px;
+$border: 2px solid getColor("primary");
 //transform
 $move-all: translateY(100%);
 $move-none: translateY(0);
 $scale: scale(1.05);
-
-//$section: 94px 0;
-//gap?
-//padding / section/ container ?
+$move-xy: translateX(-50%) translateY(-50%);

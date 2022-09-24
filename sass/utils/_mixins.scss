@@ -12,12 +12,12 @@
   transition-duration: $speed;
   transition-timing-function: $timing;
 }
-@mixin border($color, $radius) {
-  border-radius: $radius;
-  border-width: 1px;
-  border-style: solid;
-  border-color: $color;
-}
+// @mixin border($color, $radius) {
+//   border-radius: $radius;
+//   border-width: 1px;
+//   border-style: solid;
+//   border-color: $color;
+// }
 @mixin font-style($height: 1.16, $weight, $spacing: 0.3em) {
   line-height: $height;
   font-weight: $weight;
@@ -33,4 +33,16 @@
   color: getColor("light");
   background-color: getColor("brand");
   cursor: pointer;
+}
+
+@mixin form-placeholder {
+  &::-webkit-input-placeholder {
+    color: getColor("form-comment");
+  }
+  &::-moz-placeholder {
+    color: getColor("form-comment");
+  }
+  &::-ms-input-placeholder {
+    color: getColor("form-comment");
+  }
 }
