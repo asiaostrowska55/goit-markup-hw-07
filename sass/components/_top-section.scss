@@ -1,0 +1,63 @@
+.title {
+  background-color: getColor("title-bg");
+  justify-content: center;
+  height: 600px;
+  max-width: 1600px;
+  background-image: url(../images/background-header.jpg);
+  background-size: cover;
+  margin: 0 auto;
+  &__label {
+    @include flex;
+    @include font-style($weight: $font-black, $spacing: 0.6em);
+    font-size: getFont("label");
+    color: getColor("light");
+    margin: 0;
+    padding: 200px 0 30px;
+  }
+  &__btn {
+    padding-bottom: 200px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.btn {
+  @include index-button;
+  @include transition;
+  border: 1px getColor("btn-border");
+  line-height: 1.88;
+  margin: 0 auto;
+  text-align: center;
+  &:hover {
+    box-shadow: getShadow("btn");
+    transform: $scale;
+    background-color: getColor("brand");
+  }
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+  gap: 30px;
+  &__item {
+    @include flex;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+  }
+  &__label {
+    @include font-style($weight: $font-bold);
+    font-size: getFont("regular");
+    padding-bottom: 10px;
+    margin: 0;
+  }
+  &__paragraph {
+    @include font-style($weight: $font-normal, $height: 1.71);
+    font-size: getFont("regular");
+    color: getColor("secondary");
+    margin: 0;
+  }
+}

@@ -14,6 +14,16 @@ $shadow: (
   "form-btn-hover": 1px 0px 8px 3px rgba(97, 100, 122, 0.395),
 );
 
-$height: 1.16;
-$spacing: 0.03em;
+@function getShadow($key) {
+  @return map-get($shadow, $key);
+}
+
 $radius: 4px;
+//transform
+$move-all: translateY(100%);
+$move-none: translateY(0);
+$scale: scale(1.05);
+
+//$section: 94px 0;
+//gap?
+//padding / section/ container ?

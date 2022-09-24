@@ -18,8 +18,7 @@
   border-style: solid;
   border-color: $color;
 }
-@mixin font-style($font-size, $height, $weight, $spacing) {
-  font-size: $font-size;
+@mixin font-style($height: 1.16, $weight, $spacing: 0.3em) {
   line-height: $height;
   font-weight: $weight;
   letter-spacing: $spacing;
@@ -31,7 +30,7 @@
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  color: getColor("btn-text");
-  background-color: getColor("btn-bg");
+  color: getColor("light");
+  background-color: getColor("brand");
   cursor: pointer;
 }

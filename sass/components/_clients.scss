@@ -1,0 +1,21 @@
+.client {
+  @include flex;
+  list-style: none;
+  gap: 30px;
+  padding-left: 0;
+  &__icon {
+    @include transition;
+    width: 170px;
+    height: 92px;
+    border: 1px solidgetColor("icon");
+    border-radius: $radius;
+    justify-content: center;
+  }
+  &__item {
+    @include flex;
+  }
+  &:hover {
+    fill: getColor("brand");
+    border-color: getColor("brand");
+  }
+}

@@ -4,6 +4,11 @@
       "extensionName": ".min.css",
       "format": "compressed",
       "savePath": "~/../css"
+    },
+    {
+      "extensionName": ".css",
+      "format": "expanded",
+      "savePath": "~/../css"
     }
   ]
 }

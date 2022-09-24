@@ -1,44 +1,23 @@
 $color: (
-  //text-general
   "primary": #212121,
   "secondary": #757575,
   "light": #ffffff,
-  "transition": #2196f3,
-  //background
-  "primary-bg": #ffffff,
+  "brand": #2196f3,
+  "logo": #000000,
+  "btn-change": #0383ed,
+  "border": #ececec,
+  "icon": #afb1b8,
+  "light-bg": #f5f4fa,
+  "modal-icon": #0e0a0a,
   "title-bg": #2f303a,
-  "section-bg": rgba(47, 48, 58, 0.8),
-  "team-bg": #f5f4fa,
+  "offer-bg": #2f303acc,
   "overlay-bg": rgba(33, 150, 243, 0.9),
   "backdrop-bg": rgba(0, 0, 0, 0.2),
-  //icons
-  "icon": #afb1b8,
-  "icon-bg-transition": #2196f3,
-  "header-icon": #757575,
-  "list-icon-bg": #f5f4fa,
-  "client-icon": #afb1b8,
-  "client-icon-transition": #2196f3,
-  "footer-icon": #ffffff,
   "footer-icon-bg": rgba(255, 255, 255, 0.1),
-  "modal-icon": #0e0a0a,
-  //buttons
-  "btn-bg": #2196f3,
-  "btn-transition": #0383ed,
   "btn-border": #9c9c9c,
-  "btn-text": #ffffff,
-  "potfolio-btn-bg": #f5f4fa,
-  "portfolio-btn-transition": #2196f3,
-  "modal-btn-border": #000000,
-  "modal-btn": #0e0a0a,
   "modal-btn-bg": rgba(255, 255, 255, 0.1),
-  "modal-btn-transition": #2196f3,
-  //rest
-  "border": #ececec,
-  "logo": #000000,
-  "web": #2196f3,
   "form-border": rgba(33, 33, 33, 0.2),
   "form-comment": rgba(117, 117, 117, 0.5),
-  "checkbox-border": #212121
 );
 
 @function getColor($key) {
