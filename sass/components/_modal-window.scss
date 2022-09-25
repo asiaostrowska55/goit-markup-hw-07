@@ -43,6 +43,7 @@
     }
   }
   &__button-icon {
+    @include transition;
     fill: getColor("modal-icon");
     justify-content: center;
     display: inline-block;

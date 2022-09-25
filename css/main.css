@@ -736,6 +736,8 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 .modal__button-icon {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #0e0a0a;
   justify-content: center;
   display: inline-block;
