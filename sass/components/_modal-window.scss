@@ -32,14 +32,14 @@
     width: 30px;
     height: 30px;
     border-radius: 50px;
-    border: 1px solidgetColor("logo");
+    border: 1px solid getColor("icon");
     background: getColor("form-btn-bg");
     cursor: pointer;
     &:hover .modal__button-icon {
       fill: getColor("brand");
     }
     &:hover {
-      box-shadow: getShadow("modal-btn-hover");
+      box-shadow: getShadow("modal");
     }
   }
   &__button-icon {
@@ -61,7 +61,6 @@
 }
 .form-title {
   @include font-style($weight: $font-bold);
-  margin: 0;
   padding-bottom: 12px;
   text-align: center;
   font-size: getFont("form-title");
@@ -124,23 +123,15 @@
     width: 12px;
   }
   &__button {
+    @include index-btn;
     @include transition;
     @include font-style($weight: $font-bold, $spacing: 0.06em);
-    width: 200px;
-    height: 50px;
-    border-radius: $radius;
     margin-top: 30px;
-    font-size: getFont("btn");
-    color: getColor("light");
-    background-color: getColor("brand");
     align-self: center;
     border-style: none;
     box-shadow: getShadow("form-btn");
-    cursor: pointer;
     &:hover {
-      box-shadow: getShadow("form-btn-hover");
-      transform: $scale;
-      background-color: getColor("brand");
+      @include index-btn-hover;
     }
   }
 }
@@ -155,6 +146,7 @@
     border: $border;
     border-radius: $radius;
     &:checked + .checkbox__icon {
+      @include transition;
       background-color: getColor("brand");
       fill: getColor("light");
       border: 1px solid getColor("brand");

@@ -9,12 +9,18 @@ body {
   margin: 0 auto;
 }
 
+img {
+  display: block;
+  margin-right: 0;
+}
+
 .contact {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.16;
   font-weight: 500;
   letter-spacing: 0.02em;
+  margin: 0;
   color: #757575;
   font-size: 14px;
   text-decoration: none;
@@ -42,11 +48,6 @@ body {
   box-sizing: border-box;
 }
 
-img {
-  display: block;
-  margin-right: 0;
-}
-
 .section {
   padding: 94px 0;
 }
@@ -56,11 +57,12 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
   line-height: 1.16;
   font-weight: 700;
   letter-spacing: 0.03em;
-  font-size: 36px;
   margin: 0;
+  font-size: 36px;
   padding-bottom: 50px;
 }
 
@@ -73,15 +75,16 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
 }
 .header__list {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
   list-style: none;
   padding: 32px 0 32px 93px;
-  margin: 0;
   gap: 46px;
 }
 .header__position {
@@ -91,6 +94,7 @@ img {
   line-height: 1.16;
   font-weight: 500;
   letter-spacing: 0.02em;
+  margin: 0;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 14px;
@@ -113,6 +117,7 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
   list-style: none;
   margin-left: auto;
   gap: 50px;
@@ -139,6 +144,7 @@ img {
   line-height: 1.16;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin: 0;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Raleway";
@@ -158,7 +164,7 @@ img {
 }
 
 .icon--color {
-  fill: #afb1b8;
+  fill: #757575;
   cursor: pointer;
 }
 
@@ -176,18 +182,22 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
   line-height: 1.16;
   font-weight: 900;
   letter-spacing: 0.06em;
+  margin: 0;
   font-size: 44px;
   color: #ffffff;
-  margin: 0;
   padding: 200px 0 30px;
 }
 .title__btn {
-  padding-bottom: 200px;
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  margin: 0;
+  padding-bottom: 200px;
 }
 
 .btn {
@@ -225,6 +235,7 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -234,17 +245,17 @@ img {
   line-height: 1.16;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin: 0;
   font-size: 14px;
   padding-bottom: 10px;
-  margin: 0;
 }
 .list__paragraph {
   line-height: 1.71;
   font-weight: 400;
   letter-spacing: 0.03em;
+  margin: 0;
   font-size: 14px;
   color: #757575;
-  margin: 0;
 }
 
 .offer {
@@ -252,9 +263,9 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
   list-style: none;
   padding: 0 15px;
-  margin: 0;
   gap: 30px;
 }
 .offer__image {
@@ -288,13 +299,14 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
   line-height: 1.66;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin: 0;
   font-size: 36px;
   list-style: none;
   padding-left: 15px;
-  margin: 0;
   gap: 30px;
 }
 .team__figure {
@@ -307,25 +319,25 @@ img {
   line-height: 1.16;
   font-weight: 500;
   letter-spacing: 0.03em;
+  margin: 0;
   font-size: 16px;
   padding: 30px 99px 10px;
-  margin: 0;
 }
 .team__job {
   line-height: 1.16;
   font-weight: 400;
   letter-spacing: 0.03em;
+  margin: 0;
   font-size: 16px;
   color: #757575;
   justify-content: center;
-  margin: 0;
 }
 .team__icon {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
   padding-bottom: 30px;
 }
 .team__icon-media {
@@ -368,6 +380,7 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
   list-style: none;
   gap: 30px;
   padding-left: 0;
@@ -392,26 +405,35 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
 }
 
 .project {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 0;
   gap: 30px;
   flex-wrap: wrap;
-  margin: 0px;
   list-style: none;
   padding-left: 15px;
   flex-basis: calc((100% - 60px) / 3);
 }
 .project__item {
+  display: block;
   list-style: none;
   background-color: #ffffff;
   width: 370px;
+  height: 404px;
   cursor: pointer;
 }
+.project__item:hover {
+  box-shadow: 0px 4px 15px -3px rgba(117, 117, 117, 0.41);
+}
 .project__figure {
-  margin: 0px;
   display: block;
+  margin: 0px;
 }
 .project__figure:hover .overlay__text {
   transform: translateY(0);
@@ -420,21 +442,22 @@ img {
   display: block;
   padding: 20.4px 24px;
   border: 1px solid #ececec;
+  margin: 0;
 }
 .project__title {
   line-height: 2;
   font-weight: 700;
   letter-spacing: 0.06em;
-  font-size: 18px;
   margin: 0;
+  font-size: 18px;
 }
 .project__descr {
   line-height: 1.88;
   font-weight: 400;
   letter-spacing: 0.06em;
+  margin: 0;
   font-size: 16px;
   color: #757575;
-  margin: 0;
 }
 
 .button {
@@ -442,10 +465,10 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   list-style: none;
-  margin: 0;
   gap: 8px;
   margin-bottom: 51px;
 }
@@ -453,36 +476,37 @@ img {
   line-height: 1.62;
   font-weight: 500;
   letter-spacing: 0.03em;
+  margin: 0;
   font-weight: 500;
   font-size: 16px;
   background-color: #f5f4fa;
-  border: 1px solid #9c9c9c;
+  border: #9c9c9c;
   border-radius: 4px;
   cursor: pointer;
   padding: 6px 22px;
 }
 .button__label:hover {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 1px 4px 3px 0px rgb(178, 178, 179);
-  border: 1px solid #9c9c9c;
 }
 .button__label:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 1px 4px 3px 0px rgb(178, 178, 179);
-  border: 1px solid #9c9c9c;
 }
 
 .text {
   line-height: 1.56;
   font-weight: 400;
   letter-spacing: 0.03em;
+  margin: 0;
   font-size: 18px;
   color: #ffffff;
   text-align: start;
   padding: 49px 45px 49px 24px;
-  margin: 0;
 }
 
 .overlay {
@@ -524,6 +548,7 @@ img {
   line-height: 1.16;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin: 0;
   display: flex;
   color: #ffffff;
   font-size: 14px;
@@ -540,11 +565,11 @@ img {
   line-height: 1.16;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin: 0;
   font-family: "Raleway";
   color: #ffffff;
   font-size: 26px;
   text-decoration: none;
-  margin: 0;
 }
 .footer-contact__logo:hover {
   color: #2196f3;
@@ -560,13 +585,13 @@ img {
   line-height: 1.24;
   font-weight: 400;
   letter-spacing: 0.03em;
+  margin: 0;
   font-size: 14px;
   color: #ffffff;
   font-style: normal;
   display: flex;
   flex-direction: column;
   padding: 20px 0 60px 0;
-  margin: 0;
   list-style: none;
   gap: 9px;
 }
@@ -576,11 +601,11 @@ img {
   line-height: 1.16;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin: 0;
   color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
   padding: 72px 0 16px 0;
-  margin: 0;
 }
 
 .media {
@@ -588,16 +613,17 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
   list-style: none;
   gap: 10px;
   padding-left: 0;
 }
 .media__link {
   display: flex;
-  margin: 0 auto;
-  text-align: center;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin: 0;
 }
 .media__link-icon {
   transition-duration: 250ms;
@@ -632,6 +658,7 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -645,7 +672,6 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.88;
-  margin: 0 auto;
   text-align: center;
 }
 .newsletter__button:hover {
@@ -699,7 +725,7 @@ img {
   width: 30px;
   height: 30px;
   border-radius: 50px;
-  border: 1px solidgetColor("logo");
+  border: 1px solid #afb1b8;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
@@ -707,7 +733,7 @@ img {
   fill: #2196f3;
 }
 .modal__button:hover {
-  box-shadow: 0px 0px 4px 0px rgba(154, 154, 166, 0.41);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 .modal__button-icon {
   fill: #0e0a0a;
@@ -806,27 +832,31 @@ img {
   width: 12px;
 }
 .form__button {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border: 1px #9c9c9c;
+  color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.16;
   font-weight: 700;
   letter-spacing: 0.06em;
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
+  margin: 0;
   margin-top: 30px;
-  font-size: 16px;
-  color: #ffffff;
-  background-color: #2196f3;
   align-self: center;
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
 }
 .form__button:hover {
-  box-shadow: 1px 0px 8px 3px rgba(97, 100, 122, 0.395);
+  box-shadow: 1px 0px 10px 3px rgba(73, 76, 105, 0.693);
   transform: scale(1.05);
-  background-color: #2196f3;
+  background-color: #0383ed;
 }
 
 .checkbox {
@@ -841,6 +871,8 @@ img {
   border-radius: 4px;
 }
 .checkbox__input:checked + .checkbox__icon {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #2196f3;
   fill: #ffffff;
   border: 1px solid #2196f3;

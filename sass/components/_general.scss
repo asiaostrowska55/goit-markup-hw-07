@@ -7,6 +7,10 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+img {
+  display: block;
+  margin-right: 0;
+}
 .contact {
   @include transition;
   @include font-style($weight: $font-medium, $spacing: 0.02em);
@@ -33,21 +37,12 @@ body {
 *::after {
   box-sizing: border-box;
 }
-img {
-  display: block;
-  margin-right: 0;
-}
 .section {
   padding: 94px 0;
 }
-// .icon {
-//   fill: getColor("icon");
-//   cursor: pointer;
-// }
 .heading {
   @include flex;
   @include font-style($weight: $font-bold);
   font-size: getFont("titles");
-  margin: 0;
   padding-bottom: 50px;
 }

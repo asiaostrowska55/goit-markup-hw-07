@@ -2,11 +2,12 @@
 @import "./fonts";
 @import "./variables";
 
-@mixin flex {
+@mixin flex($align-t: center) {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: $align-t;
+  margin: 0;
 }
 @mixin transition($speed: 250ms, $timing: cubic-bezier(0.4, 0, 0.2, 1)) {
   transition-duration: $speed;
@@ -17,6 +18,7 @@
   line-height: $height;
   font-weight: $weight;
   letter-spacing: $spacing;
+  margin: 0;
 }
 @mixin index-btn {
   width: 200px;
@@ -35,8 +37,8 @@
   transform: $scale;
   background-color: getColor("btn-change");
 }
-@mixin icon {
-  fill: getColor("icon");
+@mixin icon($fill: getColor("icon")) {
+  fill: $fill;
   cursor: pointer;
 }
 @mixin form-placeholder {

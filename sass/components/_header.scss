@@ -8,7 +8,6 @@
     @include flex;
     list-style: none;
     padding: 32px 0 32px 93px;
-    margin: 0;
     gap: 46px;
   }
   &__position {
@@ -73,5 +72,5 @@
   }
 }
 .icon--color {
-  @include icon;
+  @include icon($fill: getColor("secondary"));
 }
