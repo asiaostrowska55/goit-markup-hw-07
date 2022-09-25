@@ -72,3 +72,6 @@
     color: getColor("brand");
   }
 }
+.icon--color {
+  @include icon;
+}

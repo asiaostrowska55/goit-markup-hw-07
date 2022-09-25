@@ -19,11 +19,20 @@ body {
   font-size: 14px;
   text-decoration: none;
 }
-
+.contact:hover {
+  color: #2196f3;
+}
+.contact:focus {
+  color: #2196f3;
+}
 .contact:focus .icon--color {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2196f3;
 }
 .contact:hover .icon--color {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2196f3;
 }
 
@@ -40,11 +49,6 @@ img {
 
 .section {
   padding: 94px 0;
-}
-
-.icon {
-  fill: #afb1b8;
-  cursor: pointer;
 }
 
 .heading {
@@ -153,6 +157,11 @@ img {
   color: #2196f3;
 }
 
+.icon--color {
+  fill: #afb1b8;
+  cursor: pointer;
+}
+
 .title {
   background-color: #2f303a;
   justify-content: center;
@@ -188,12 +197,12 @@ img {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.06em;
+  border: 1px #9c9c9c;
   color: #ffffff;
   background-color: #2196f3;
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px #9c9c9c;
   line-height: 1.88;
   margin: 0 auto;
   text-align: center;
@@ -201,7 +210,7 @@ img {
 .btn:hover {
   box-shadow: 1px 0px 10px 3px rgba(73, 76, 105, 0.693);
   transform: scale(1.05);
-  background-color: #2196f3;
+  background-color: #0383ed;
 }
 
 .list {
@@ -322,11 +331,15 @@ img {
 .team__icon-media {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #afb1b8;
+  cursor: pointer;
   width: 44px;
   height: 44px;
   border-radius: 50px;
 }
 .team__icon-media:hover {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #ffffff;
   background-color: #2196f3;
 }
@@ -360,23 +373,25 @@ img {
   padding-left: 0;
 }
 .client__icon {
+  fill: #afb1b8;
+  cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 170px;
   height: 92px;
-  border: 1px solidgetColor("icon");
+  border: 1px solid #9c9c9c;
   border-radius: 4px;
   justify-content: center;
+}
+.client__icon:hover {
+  fill: #2196f3;
+  border-color: #2196f3;
 }
 .client__item {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-.client:hover {
-  fill: #2196f3;
-  border-color: #2196f3;
 }
 
 .project {
@@ -526,7 +541,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.03em;
   font-family: "Raleway";
-  color: getColor "light";
+  color: #ffffff;
   font-size: 26px;
   text-decoration: none;
   margin: 0;
@@ -603,7 +618,7 @@ img {
   display: inline-flex;
   gap: 12px;
 }
-.newsletter_input {
+.newsletter__input {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   background: transparent;
@@ -617,26 +632,26 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  line-height: 1.16;
-  font-weight: 700;
-  letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
   border-radius: 4px;
   font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border: 1px #9c9c9c;
   color: #ffffff;
   background-color: #2196f3;
-  padding-left: 42px;
-  border-style: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 1.88;
+  margin: 0 auto;
+  text-align: center;
 }
 .newsletter__button:hover {
   box-shadow: 1px 0px 10px 3px rgba(73, 76, 105, 0.693);
   transform: scale(1.05);
-  background-color: #2196f3;
+  background-color: #0383ed;
 }
 
 .send-icon {

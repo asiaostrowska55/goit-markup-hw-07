@@ -12,29 +12,33 @@
   transition-duration: $speed;
   transition-timing-function: $timing;
 }
-// @mixin border($color, $radius) {
-//   border-radius: $radius;
-//   border-width: 1px;
-//   border-style: solid;
-//   border-color: $color;
-// }
+
 @mixin font-style($height: 1.16, $weight, $spacing: 0.03em) {
   line-height: $height;
   font-weight: $weight;
   letter-spacing: $spacing;
 }
-@mixin index-button() {
+@mixin index-btn {
   width: 200px;
   height: 50px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.06em;
+  border: 1px getColor("btn-border");
   color: getColor("light");
   background-color: getColor("brand");
   cursor: pointer;
 }
-
+@mixin index-btn-hover {
+  box-shadow: getShadow("btn");
+  transform: $scale;
+  background-color: getColor("btn-change");
+}
+@mixin icon {
+  fill: getColor("icon");
+  cursor: pointer;
+}
 @mixin form-placeholder {
   &::-webkit-input-placeholder {
     color: getColor("form-comment");

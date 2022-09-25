@@ -35,10 +35,12 @@
   }
   &__icon-media {
     @include transition;
+    @include icon;
     width: 44px;
     height: 44px;
     border-radius: 50px;
     &:hover {
+      @include transition;
       fill: getColor("light");
       background-color: getColor("brand");
     }

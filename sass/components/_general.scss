@@ -13,12 +13,18 @@ body {
   color: getColor("secondary");
   font-size: getFont("regular");
   text-decoration: none;
-}
-.contact {
+  &:hover {
+    color: getColor("brand");
+  }
+  &:focus {
+    color: getColor("brand");
+  }
   &:focus .icon--color {
+    @include transition;
     fill: getColor("brand");
   }
   &:hover .icon--color {
+    @include transition;
     fill: getColor("brand");
   }
 }
@@ -34,10 +40,10 @@ img {
 .section {
   padding: 94px 0;
 }
-.icon {
-  fill: getColor("icon");
-  cursor: pointer;
-}
+// .icon {
+//   fill: getColor("icon");
+//   cursor: pointer;
+// }
 .heading {
   @include flex;
   @include font-style($weight: $font-bold);

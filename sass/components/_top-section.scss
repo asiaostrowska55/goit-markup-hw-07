@@ -22,16 +22,13 @@
 }
 
 .btn {
-  @include index-button;
+  @include index-btn;
   @include transition;
-  border: 1px getColor("btn-border");
   line-height: 1.88;
   margin: 0 auto;
   text-align: center;
   &:hover {
-    box-shadow: getShadow("btn");
-    transform: $scale;
-    background-color: getColor("brand");
+    @include index-btn-hover;
   }
 }
 

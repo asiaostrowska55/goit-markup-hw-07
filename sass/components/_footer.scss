@@ -29,7 +29,7 @@
     @include transition;
     @include font-style($weight: $font-bold);
     font-family: "Raleway";
-    color: getColor ("light");
+    color: getColor("light");
     font-size: getFont("webstudio");
     text-decoration: none;
     margin: 0;
@@ -97,7 +97,7 @@
 .newsletter {
   display: inline-flex;
   gap: 12px;
-  &_input {
+  &__input {
     border: 1px solid getColor("form-btn-bg");
     border-radius: $radius;
     background: transparent;
@@ -108,26 +108,16 @@
   }
   &__button {
     @include flex;
+    @include index-btn;
     @include transition;
-    @include font-style($weight: $font-bold, $spacing: 0.06em);
-    width: 200px;
-    height: 50px;
-    border-radius: $radius;
-    font-size: getFont("btn");
-    color: getColor("light");
-    background-color: getColor("brand");
-    padding-left: 42px;
-    border-style: none;
-    box-shadow: getShadow("newsletter");
-    cursor: pointer;
+    line-height: 1.88;
+    margin: 0 auto;
+    text-align: center;
     &:hover {
-      box-shadow: getShadow("btn");
-      transform: $scale;
-      background-color: getColor("brand");
+      @include index-btn-hover;
     }
   }
 }
-
 .send-icon {
   fill: getColor("light");
   height: 24px;
